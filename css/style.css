@@ -1,0 +1,110 @@
+@import url("http://fonts.cdnfonts.com/css/samarkan");
+
+body {
+  margin: 0;
+  position: relative;
+  /* background-color: #e8f9fd; */
+}
+
+.navbar {
+  position: fixed;
+  width: 100vw;
+  height: 70px;
+  box-shadow: 1px 1px 10px rgb(211, 209, 209);
+  display: flex;
+  background-color: 533e85;
+  align-items: center;
+  background-color: #e8f9fd;
+}
+.logo {
+  padding: 10px;
+  font-family: "Samarkan", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  background: linear-gradient(90deg, #725afa, #58e600);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 25px;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+.main h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(90deg, #fadf5a, #e65c00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+}
+nav ul {
+  display: flex;
+  display: flex;
+  align-items: center;
+
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+}
+.links {
+  width: 75vw;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  filter: blur(40px);
+}
+
+.main p {
+  width: 60%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 40px 10px 40px;
+  background-color: #fadf5a;
+}
+
+.button {
+  margin-top: 40px;
+  display: flex;
+  gap: 40px;
+}
+
+.signup {
+  background-color: white;
+  text-align: center;
+  opacity: 1;
+  top: 30vh;
+  right: 30vw;
+  position: absolute;
+  width: 30vw;
+  height: 60vh;
+  z-index: 10;
+  box-shadow: 1px 1px 10px rgba(205, 196, 196, 0.789);
+  border-radius: 10%;
+}
+
+.signup h1,
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

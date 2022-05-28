@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+.navbar {
+  width: 100vw;
+  height: 100.8px;
+  align-items: center;
+}
+.logo {
+  padding: 10px;
+  font-family: "Samarkan", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #00a1e0;
+  margin-left: 25px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+}
+
+nav ul {
+  display: flex;
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+  gap: 10vw;
+}
+.links {
+  /* width: 75vw; */
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+
+.list-item {
+  width: 100px;
+}
+
+.navbar hr {
+  height: 2px;
+  width: 100vw;
+  border: none;
+  background-color: #00a1e0;
+}
+
+.logout {
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(39, 136, 6);
+}
+
+/* main */
+.main {
+  margin: 60px auto 0 auto;
+  width: 90vw;
+  height: 70vh;
+  border: 1px solid;
+  border-color: #00a1e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  font-family: "Montserrat", sans-serif;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 20px;
+}
+
+.name {
+  background-color: #00a0e076;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.product-item {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr 2fr 2fr;
+  justify-items: center;
+}
+
+.product-item input {
+  background-color: #3fabd648;
+  border: none;
+  border-radius: 5px;
+  width: 90%;
+  height: 25px;
+  margin: 10px auto;
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.intro {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  gap: 50px;
+}
+.text {
+  width: 50%;
+}
+.main-text {
+  color: #032d60;
+  font-size: 3rem;
+  width: 80%;
+  /* line-height: 1.2; */
+  text-align: start;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+.def-text {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+
+.add-item {
+  border: 2px dashed;
+  border-color: #00a1e0;
+  background-color: #3fabd648;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 98%;
+  color: #00a1e0;
+  margin: 10px auto;
+}
+.product-item {
+  text-transform: capitalize;
+}
+
+.add-item img {
+  height: 30px;
+  width: 30px;
+}
