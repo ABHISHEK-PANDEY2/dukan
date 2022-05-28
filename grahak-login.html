@@ -54,6 +54,7 @@
       </div>
       <div class="btn">
         <button id="login" class="logout">Sign in with Google</button>
+        <button id="signOut" class="logout">Log out</button>
       </div>
     </div>
   </body>
@@ -97,6 +98,7 @@
     const a = 2;
     // The signed-in user info.
     const user = result.user;
+    user.email
   }).catch((error) => {
     // Handle Errors here.
     const errorCode = error.code;
@@ -110,6 +112,19 @@
 
       
     });
+
+  signOut.addEventListener('click',(e) => {
+
+    signOut(auth).then(() => {
+    // Sign-out successful.
+    }).catch((error) => {
+    // An error happened.
+    });
+
+  });
+
+
+
   </script>
   
 </html>
