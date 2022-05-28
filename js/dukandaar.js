@@ -34,8 +34,4 @@ function submit() {
     <div class="price">${rate.value}</div>
     <div class="exp-date">${date.value || "-"}</div>
   </div>`;
-  item.value = "";
-  qnty.value = "";
-  rate.value = "";
-  date.value = "";
 }

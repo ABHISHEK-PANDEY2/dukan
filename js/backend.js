@@ -1,22 +1,26 @@
 "use strict";
-
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCL2TzKovTmYU6nPZzWiHI045bZu4XBLtY",
-  authDomain: "dukan-data.firebaseapp.com",
-  projectId: "dukan-data",
-  storageBucket: "dukan-data.appspot.com",
-  messagingSenderId: "746859394865",
-  appId: "1:746859394865:web:09e66b601cbf58364d6210",
+  apiKey: "AIzaSyDi3QvaawY3CSR9gn5jDiY5XyD0RXixEMw",
+  authDomain: "dukaan-0001.firebaseapp.com",
+  databaseURL: "https://dukaan-0001-default-rtdb.firebaseio.com",
+  projectId: "dukaan-0001",
+  storageBucket: "dukaan-0001.appspot.com",
+  messagingSenderId: "911250519486",
+  appId: "1:911250519486:web:f4e0355c55d8e752d7b5ef",
+  measurementId: "G-212ZNZ7HF7",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+// Initialize Firebase
 
 import {
   getFirestore,

@@ -88,7 +88,7 @@
     const analytics = getAnalytics(app);
     const provider = new GoogleAuthProvider(app);
     const auth = getAuth(app);
-
+    let emailId;
     login.addEventListener("click", (e) => {
       signInWithRedirect(auth, provider);
 
@@ -101,7 +101,10 @@
           const a = 2;
           // The signed-in user info.
           const user = result.user;
+          console.log(user.email);
+          emailId = user.email;
         })
+
         .catch((error) => {
           // Handle Errors here.
           const errorCode = error.code;
@@ -113,5 +116,6 @@
           // ...
         });
     });
+    console.log(emailId);
   </script>
 </html>
