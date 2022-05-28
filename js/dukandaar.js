@@ -13,7 +13,7 @@ const qnty = document.querySelector(".qnty");
 const rate = document.querySelector(".rate");
 const date = document.querySelector(".date");
 let count = 0;
-document.querySelector(".add img").addEventListener("click", check);
+document.querySelector(".send-data").addEventListener("click", check);
 
 function check() {
   if (item.value && qnty.value && rate.value) {
@@ -34,8 +34,4 @@ function submit() {
     <div class="price">${rate.value}</div>
     <div class="exp-date">${date.value || "-"}</div>
   </div>`;
-  item.value = "";
-  qnty.value = "";
-  rate.value = "";
-  date.value = "";
 }
