@@ -73,33 +73,46 @@ nav ul {
   flex-direction: column;
   width: 90vw;
   margin: auto;
-  gap: 30px;
+  gap: 10px;
 }
 .catogaries {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-  height: 60vh;
+  gap: 20px;
+  /* height: 60vh; */
 }
 .items {
-  height: 90%;
+  position: relative;
+  height: 70%;
   width: 90%;
   border-radius: 30px;
   background-color: #00a1e0;
-  color: rgb(16, 0, 0);
-  font-family: "Montserrat", sans-serif;
-  font-size: 3rem;
-  font-weight: 600;
   text-align: start;
   display: flex;
-  align-items: flex-end;
-  background-image: url("../assets/fruits.jfif");
-  filter: blur(0.5px);
+  align-items: center;
+  overflow: hidden;
 }
 
-.items p {
-  margin: 5px 0 0 10px;
+.items img {
+  height: 100%;
+  width: 100%;
+}
+
+.item {
+  position: relative;
+}
+
+.item-name {
+  color: #032d60;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 5px 5px;
+  /* margin: 5px 0 0 10px; */
   filter: blur(0px);
+  /* position: absolute; */
+  /* top: 0%; */
+  color: rgb(0, 0, 0);
 }
 
 .items:hover {
