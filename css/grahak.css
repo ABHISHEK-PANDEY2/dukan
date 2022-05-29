@@ -86,9 +86,23 @@ nav ul {
   width: 90%;
   border-radius: 30px;
   background-color: #00a1e0;
+  color: rgb(16, 0, 0);
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: start;
+  display: flex;
+  align-items: flex-end;
+  background-image: url("../assets/fruits.jfif");
+  filter: blur(0.5px);
+}
+
+.items p {
+  margin: 5px 0 0 10px;
+  filter: blur(0px);
 }
 
 .items:hover {
-  box-shadow: 1px 1px 20px rgba(121, 117, 117, 0.738);
+  box-shadow: 1px 1px 20px rgba(224, 219, 219, 0.485);
   cursor: pointer;
 }
