@@ -52,12 +52,8 @@
         <img src="./assets/grahak.png" alt="" />
       </div>
       <div class="btn">
-        <button id="login" class="logout">Sign in with Google</button>
-        <<<<<<< HEAD
-        <button id="logout" class="logout">Log out</button>
-        =======
-        <button id="signOut" class="logout">Log out</button>
-        >>>>>>> 4e20374e10fc8d825171e833fd1bf4cf046d4eae
+        <button id="login" class="logout" >Sign in with Google</button>
+        <!-- >>>>>>> 4e20374e10fc8d825171e833fd1bf4cf046d4eae -->
       </div>
     </div>
   </body>
@@ -70,6 +66,7 @@
       GoogleAuthProvider,
       signInWithRedirect,
       getRedirectResult,
+      signOut,
     } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-auth.js";
     // TODO: Add SDKs for Firebase products that you want to use
     // https://firebase.google.com/docs/web/setup#available-libraries
@@ -105,8 +102,13 @@
           const a = 2;
           // The signed-in user info.
           const user = result.user;
+          if(user.email){
+            window.location.replace("./grahak.html");
+          }else{
+            alert("email not verified");
+          }
           console.log(user.email);
-          emailId = user.email;
+          
         })
 
         .catch((error) => {
@@ -120,6 +122,9 @@
           // ...
         });
     });
-    console.log(emailId);
+
+   
+  </script>
+  
   </script>
 </html>
